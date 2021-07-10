@@ -1,0 +1,99 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#container {
+  font-family: 'Amita', cursive;
+  padding: 10px;
+  /* flexbox */
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  /* https://neumorphism.io/#ebebeb */
+  border-radius: 10px;
+background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  32px 32px 64px #d9d9d9,
+             -32px -32px 64px #ffffff;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header, footer, main {
+  flex-shrink: 0;
+}
+
+header, footer {
+  font-size: 1.25em;
+  text-align: center;
+  
+}
+
+#entry, #expenseHistory {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10PX;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow:  32px 32px 64px #d9d9d9,
+               -32px -32px 64px #ffffff;
+}
+
+#entryHeader, #historyHeader {
+  color: #242323;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#entryForm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#entryForm label {
+  font-size: 1.25em;
+}
+
+#entryForm input {
+  font-size: 1.25em;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+#entryForm select {
+  font-size: 1.25em;
+  width: 150px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+} 
+
+#entryForm button {
+  font-size: 1.25em;
+  width: 100%;
+  margin-bottom: 20px;
+border: none;
+padding: 10px;
+border-radius: 50px;
+background: linear-gradient(145deg, #cdcdcd, #adadad);
+box-shadow:  32px 32px 64px #a3a3a3,
+             -32px -32px 64px #dddddd;
+
+} 
+
+#historyTable table {
+  width: 100%;
+  border-radius: 50px;
+background: #ebebeb;
+box-shadow: inset 32px 32px 64px #c8c8c8,
+            inset -32px -32px 64px #ffffff;
+/* border-collapse: collapse; */
+}
+
+h1, h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
